@@ -27,6 +27,7 @@ public:
     }
     ~Date();
     Date& operator == (const Date&);
+    
     char* get_c_str() const {
         return dateStr;
     };
@@ -51,7 +52,7 @@ public:
             Date &date = arr[i];
             date.setDate(year, month, day);
         }
-    };
+    }    
     
 private:
     int year,month,day;
