@@ -42,7 +42,7 @@ void test_CreatePoints() {
 }
 
 
-int main() {
+int main_date() {
     cout << "Date.cpp\n";
     
     Date d1(2001,01,21);

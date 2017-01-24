@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0A22621E37465F00A80434 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A22601E37465F00A80434 /* Rectangle.cpp */; };
 		7E2F13141E360EA1008E8535 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F13121E360EA1008E8535 /* Date.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E0A22601E37465F00A80434 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		7E0A22611E37465F00A80434 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		7E2F13081E360D50008E8535 /* CppTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E2F130B1E360D50008E8535 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7E2F13121E360EA1008E8535 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
 		7E2F13131E360EA1008E8535 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,9 +61,10 @@
 		7E2F130A1E360D50008E8535 /* CppTest */ = {
 			isa = PBXGroup;
 			children = (
-				7E2F130B1E360D50008E8535 /* main.cpp */,
 				7E2F13121E360EA1008E8535 /* Date.cpp */,
 				7E2F13131E360EA1008E8535 /* Date.h */,
+				7E0A22601E37465F00A80434 /* Rectangle.cpp */,
+				7E0A22611E37465F00A80434 /* Rectangle.h */,
 			);
 			path = CppTest;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E2F13141E360EA1008E8535 /* Date.cpp in Sources */,
+				7E0A22621E37465F00A80434 /* Rectangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +254,7 @@
 				7E2F13111E360D50008E8535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
