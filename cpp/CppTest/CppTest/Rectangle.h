@@ -10,12 +10,15 @@
 #define Rectangle_hpp
 
 #include <stdio.h>
-
+#include <iostream>
 
 class Shape {
     int no;
 public:
     virtual int getArea()=0;
+    void setNo(int _no) {
+        no = _no;
+    }
 };
 
 class Point {
@@ -32,22 +35,31 @@ public:
 class Rectangle: public Shape {
     int width;
     int height;
-    Point * leftUp;
+    Point *leftUp;
     
 public:
-    Rectangle(int width, int height, int x, int y): width(width), height(height) {
+    Rectangle(int width = 0, int height = 0, int x = 0, int y = 0): width(width), height(height) {
         leftUp = new Point(x, y);
     };
     Rectangle(const Rectangle& other);
-    Rectangle& operator=(const Rectangle& other);
+//    Rectangle& operator=(const Rectangle& other);
+    virtual int getArea();
     ~Rectangle() {
         delete leftUp;
     }
 };
 
 class Circle: public Shape {
-    Point center;
+    Point *center;
     int radius;
+public:
+    Circle(int _radius = 0): radius(_radius) {
+        center = new Point();
+    }    
+    virtual int getArea();
+    ~Circle() {
+        delete center;
+    }
 };
 
 inline
@@ -57,17 +69,26 @@ Rectangle::Rectangle(const Rectangle& other) {
     this->leftUp = new Point(*other.leftUp);
 }
 
+//inline
+//Rectangle& Rectangle::operator=(const Rectangle& other) {
+//    if(this == &other) {
+//        return *this;
+//    }
+//    delete leftUp;
+//    this->width = other.width;
+//    this->height = other.height;
+//    this->leftUp = new Point(*other.leftUp);
+//    return *this;
+//}
+
 inline
-Rectangle& Rectangle::operator=(const Rectangle& other) {
-    if(this == &other) {
-        return *this;
-    }
-    delete leftUp;
-    this->width = other.width;
-    this->height = other.height;
-    this->leftUp = new Point(*other.leftUp);
-    return *this;
+int Rectangle::getArea() {
+    return width * height;
 }
 
+inline
+int Circle::getArea() {
+    return 3.14 * radius * radius;
+}
 
 #endif /* Rectangle_hpp */
