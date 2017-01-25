@@ -36,11 +36,11 @@ public:
         printf("%s\n", dateStr);
     }
     void setDate(int _year, int _month, int _day) {
-        delete[] dateStr;
+//        delete[] dateStr;
         year = _year;
         month = _month;
         day = _day;
-        dateStr = new char[16];
+//        dateStr = new char[16];
         sprintf(dateStr, "%d-%d-%d", year, month, day);
     }
     static void CreatePoints(Date arr[], const int size) {

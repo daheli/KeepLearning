@@ -8,7 +8,9 @@
 
 #include "Rectangle.h"
 
-int main() {
-    
+using namespace std;
+
+int main_() {
+//    cout << "\nRectangle\n";
     return 0;
 }

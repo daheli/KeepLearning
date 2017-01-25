@@ -14,6 +14,8 @@
 
 class Shape {
     int no;
+public:
+    virtual int getArea()=0;
 };
 
 class Point {
@@ -41,6 +43,11 @@ public:
     ~Rectangle() {
         delete leftUp;
     }
+};
+
+class Circle: public Shape {
+    Point center;
+    int radius;
 };
 
 inline
