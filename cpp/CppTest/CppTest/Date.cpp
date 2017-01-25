@@ -12,22 +12,31 @@
 using namespace std;
 
 void Sort(Date arr[], const int size) {
-    Date tmp;
     for(int i=0; i<size; i++) {
-        for(int j=i; j<size-1; j++) {
-            if(arr[j] > arr[j+1]) {
-                tmp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = tmp;
+        Date *min = &arr[i];
+        int min_index = i;
+        for(int j=i+1; j<size; j++) {
+            if(arr[j].daysTotalNumber() < min->daysTotalNumber()) {
+                min = &arr[j];
+                min_index = j;
             }
         }
+        
+        if (min_index != i) {
+            min = arr[i].clone();
+            arr[i] = arr[min_index];
+            arr[min_index] = *min;
+        }
     }
+    for(int i=0; i<size; i++) {
+        arr[i].print();
+    }    
 }
 
 void test_CreatePoints() {
     cout << "\nCreatePoints\n";
     const int size = 10;
-    Date arr[size];
+    Date *arr = new Date[size];
     Date::CreatePoints(arr, size);
     for(int i=0; i<size; i++) {
         arr[i].print();
@@ -35,10 +44,8 @@ void test_CreatePoints() {
     
     cout << "\nSort\n";
     Sort(arr, size);
-    for(int i=0; i<size; i++) {
-        arr[i].print();
-    }
     
+    delete[] arr;
 }
 
 

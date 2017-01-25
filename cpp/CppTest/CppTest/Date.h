@@ -21,7 +21,7 @@ __greater(const Date& date1, const Date& date2);
 class Date {
     
 public:
-    Date (int year = 2000, int month = 1, int day = 1): year(year), month(month), day(day) {
+    Date (int year = 2001, int month = 1, int day = 1): year(year), month(month), day(day) {
         dateStr = new char[16];
         sprintf(dateStr, "%d-%d-%d", year, month, day);
     }
@@ -36,23 +36,30 @@ public:
         printf("%s\n", dateStr);
     }
     void setDate(int _year, int _month, int _day) {
-//        delete[] dateStr;
+        delete[] dateStr;
         year = _year;
         month = _month;
         day = _day;
-//        dateStr = new char[16];
+        dateStr = new char[16];
         sprintf(dateStr, "%d-%d-%d", year, month, day);
     }
     static void CreatePoints(Date arr[], const int size) {
         for(int i=0; i<size; i++) {
             int year = rand()%110 + 1900;
             int month = rand()%12 + 1;
-            int day = rand()%30 + 1;
-            
+            int day;
+            if(month == 2) {
+                day = rand()%30 + 1;
+            } else {
+                day = rand()%28 + 1;
+            }            
             Date &date = arr[i];
             date.setDate(year, month, day);
         }
-    }    
+    }
+    Date *clone() const {
+        return new Date(this->year, this->month, this->day);
+    }
     
 private:
     int year,month,day;
@@ -69,6 +76,11 @@ inline bool
 operator < (const Date& date1, const Date& date2) {
     return !__greater(date1, date2);
 }
+
+
+//Date& operator = (const Date& date) {
+//    return NULL;
+//}
 
 Date::~Date() {
     delete[] dateStr;
