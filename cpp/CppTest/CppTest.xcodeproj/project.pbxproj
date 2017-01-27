@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E0A22671E3908BB00A80434 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A22601E37465F00A80434 /* Rectangle.cpp */; };
+		7E15234B1E3B3A8E00F75802 /* Fruit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E1523491E3B3A8E00F75802 /* Fruit.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		7E0A22601E37465F00A80434 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		7E0A22611E37465F00A80434 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		7E1523491E3B3A8E00F75802 /* Fruit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fruit.cpp; sourceTree = "<group>"; };
+		7E15234A1E3B3A8E00F75802 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
 		7E2F13081E360D50008E8535 /* CppTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2F13121E360EA1008E8535 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
 		7E2F13131E360EA1008E8535 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 				7E2F13131E360EA1008E8535 /* Date.h */,
 				7E0A22601E37465F00A80434 /* Rectangle.cpp */,
 				7E0A22611E37465F00A80434 /* Rectangle.h */,
+				7E1523491E3B3A8E00F75802 /* Fruit.cpp */,
+				7E15234A1E3B3A8E00F75802 /* Fruit.h */,
 			);
 			path = CppTest;
 			sourceTree = "<group>";
@@ -125,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E0A22671E3908BB00A80434 /* Rectangle.cpp in Sources */,
+				7E15234B1E3B3A8E00F75802 /* Fruit.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
