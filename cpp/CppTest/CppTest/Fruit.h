@@ -11,27 +11,41 @@
 
 #include <stdio.h>
 
-
+//Fruit total: (24+4) + 补齐 = 32byte
 class Fruit {
-    int no;
-    double weight;
-    char key;
-//public:
-//    void print() {   }
-//    virtual void process(){   }
+    int no; // 4
+    double weight; // 8
+    char key; // 1
+    //data -> 24
+public:
+    void print() {   }
+    void print1() {   }
+    void print2() {   }
+    void print3() {   }
+    void print4() {   }
+    virtual void process(){   } //vptr -> 4
 };
 
-//class Apple: public Fruit{
-//    int size;
-//    char type;
-//public:
-//    void save() {   }
-//    virtual void process(){   }
-//};
 
+//Apple total: 8 + Fruit(32) = 40byte
+class Apple: public Fruit{
+    int size; // 4
+    char type; // 1
+    // data -> 8
+public:
+    void save() {   }
+    virtual void process(){   } //重写vtbl
+    virtual void process2(){   }
+    virtual void process3(){   }
+    virtual void process4(){   }
+    virtual void process5(){   }
+    virtual void process6(){   }
+};
+
+//Pear total: 8 + 8 = 16byte
 class Pear {
-    int no;
-    char key;
-    double weight;
+    int no; // 4
+    char key;// 1
+    double weight; // 8
 };
 #endif /* Fruit_hpp */

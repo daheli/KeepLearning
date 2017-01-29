@@ -14,12 +14,11 @@ using namespace std;
 
 int main() {
     
-//    Fruit fruit;
-//    Apple apple;
+    cout << sizeof(void*) << endl;
     
     cout << "int:" << sizeof(int) << " double:" << sizeof(double) << " char:" << sizeof(char) << endl;
     cout << "Fruit:" << sizeof(Fruit) << endl;
-//    cout << "Apple:" << sizeof(Apple) << endl;
+    cout << "Apple:" << sizeof(Apple) << endl;
     cout << "Pear:" << sizeof(Pear) << endl;
     return 0;
 }
