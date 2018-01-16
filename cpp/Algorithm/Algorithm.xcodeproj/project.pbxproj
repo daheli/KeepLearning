@@ -26,6 +26,8 @@
 		7E177B23200C9304001DC8D0 /* SortTestHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTestHelper.h; sourceTree = "<group>"; };
 		7E177B28200C9C36001DC8D0 /* SortBasic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortBasic.h; sourceTree = "<group>"; };
 		7E177B2A200CB029001DC8D0 /* SortAdvance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAdvance.h; sourceTree = "<group>"; };
+		7E177B2B200DFED6001DC8D0 /* SortOptional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortOptional.h; sourceTree = "<group>"; };
+		7E177B2D200E2D58001DC8D0 /* TestSortMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSortMain.h; sourceTree = "<group>"; };
 		7EB7D29720074D90006B3097 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB7D29A20074D90006B3097 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,8 +49,17 @@
 				7E177B23200C9304001DC8D0 /* SortTestHelper.h */,
 				7E177B28200C9C36001DC8D0 /* SortBasic.h */,
 				7E177B2A200CB029001DC8D0 /* SortAdvance.h */,
+				7E177B2B200DFED6001DC8D0 /* SortOptional.h */,
+				7E177B2D200E2D58001DC8D0 /* TestSortMain.h */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		7E177B2C200E2D0D001DC8D0 /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BinarySearchTree;
 			sourceTree = "<group>";
 		};
 		7EB7D28E20074D90006B3097 = {
@@ -70,6 +81,7 @@
 		7EB7D29920074D90006B3097 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				7E177B2C200E2D0D001DC8D0 /* BinarySearchTree */,
 				7E177B21200C92DD001DC8D0 /* Sorting */,
 				7EB7D29A20074D90006B3097 /* main.cpp */,
 			);
