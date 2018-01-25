@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E177B33200F3CE8001DC8D0 /* bible.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E177B30200F35FE001DC8D0 /* bible.txt */; };
 		7EB7D29B20074D90006B3097 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7D29A20074D90006B3097 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7EB7D29520074D90006B3097 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				7E177B33200F3CE8001DC8D0 /* bible.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -28,8 +30,18 @@
 		7E177B2A200CB029001DC8D0 /* SortAdvance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortAdvance.h; sourceTree = "<group>"; };
 		7E177B2B200DFED6001DC8D0 /* SortOptional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortOptional.h; sourceTree = "<group>"; };
 		7E177B2D200E2D58001DC8D0 /* TestSortMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSortMain.h; sourceTree = "<group>"; };
+		7E177B2E200EFC4C001DC8D0 /* BSTBasic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSTBasic.h; sourceTree = "<group>"; };
+		7E177B2F200EFE2B001DC8D0 /* TestBSTMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBSTMain.h; sourceTree = "<group>"; };
+		7E177B30200F35FE001DC8D0 /* bible.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bible.txt; sourceTree = "<group>"; };
+		7E177B31200F35FE001DC8D0 /* FileOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOps.h; sourceTree = "<group>"; };
+		7E177B32200F3617001DC8D0 /* SequenceST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceST.h; sourceTree = "<group>"; };
+		7EAF387A2018AA6C00869FE3 /* Heap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		7EAF387B2018AAB600869FE3 /* TestHeapMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHeapMain.h; sourceTree = "<group>"; };
 		7EB7D29720074D90006B3097 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB7D29A20074D90006B3097 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7ED942982019F4670073EA81 /* 206_Reverse_Linked_List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 206_Reverse_Linked_List.h; sourceTree = "<group>"; };
+		7ED94299201A32F50073EA81 /* 226_Invert_Binary_Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 226_Invert_Binary_Tree.h; sourceTree = "<group>"; };
+		7ED9C4272019856B00B3C625 /* 300_Longest_Increasing_Subsequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 300_Longest_Increasing_Subsequence.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,22 @@
 		7E177B2C200E2D0D001DC8D0 /* BinarySearchTree */ = {
 			isa = PBXGroup;
 			children = (
+				7E177B32200F3617001DC8D0 /* SequenceST.h */,
+				7E177B30200F35FE001DC8D0 /* bible.txt */,
+				7E177B31200F35FE001DC8D0 /* FileOps.h */,
+				7E177B2E200EFC4C001DC8D0 /* BSTBasic.h */,
+				7E177B2F200EFE2B001DC8D0 /* TestBSTMain.h */,
 			);
 			path = BinarySearchTree;
+			sourceTree = "<group>";
+		};
+		7EAF38792018A9E300869FE3 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF387A2018AA6C00869FE3 /* Heap.h */,
+				7EAF387B2018AAB600869FE3 /* TestHeapMain.h */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 		7EB7D28E20074D90006B3097 = {
@@ -81,11 +107,23 @@
 		7EB7D29920074D90006B3097 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				7ED9C4262019856100B3C625 /* Leetcode */,
+				7EAF38792018A9E300869FE3 /* Heap */,
 				7E177B2C200E2D0D001DC8D0 /* BinarySearchTree */,
 				7E177B21200C92DD001DC8D0 /* Sorting */,
 				7EB7D29A20074D90006B3097 /* main.cpp */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		7ED9C4262019856100B3C625 /* Leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				7ED9C4272019856B00B3C625 /* 300_Longest_Increasing_Subsequence.h */,
+				7ED942982019F4670073EA81 /* 206_Reverse_Linked_List.h */,
+				7ED94299201A32F50073EA81 /* 226_Invert_Binary_Tree.h */,
+			);
+			path = Leetcode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

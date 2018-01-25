@@ -8,6 +8,8 @@
 
 #include <iostream>
 #include "TestSortMain.h"
+#include "TestBSTMain.h"
+#include "TestHeapMain.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -16,6 +18,9 @@ int main(int argc, const char * argv[]) {
 //    testSortBasic();
 //    testSortAdvance();
 //    testSortAdvance2();
-    testSortOptional();
+//    testSortOptional();
+    
+//    testSearch();
+    testTraverse();
     return 0;
 }
