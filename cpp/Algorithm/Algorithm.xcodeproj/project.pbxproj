@@ -41,6 +41,7 @@
 		7EB7D29A20074D90006B3097 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		7ED942982019F4670073EA81 /* 206_Reverse_Linked_List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 206_Reverse_Linked_List.h; sourceTree = "<group>"; };
 		7ED94299201A32F50073EA81 /* 226_Invert_Binary_Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 226_Invert_Binary_Tree.h; sourceTree = "<group>"; };
+		7ED9429A201CD43C0073EA81 /* Longest_Common_Subsequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Longest_Common_Subsequence.h; sourceTree = "<group>"; };
 		7ED9C4272019856B00B3C625 /* 300_Longest_Increasing_Subsequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 300_Longest_Increasing_Subsequence.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +123,7 @@
 				7ED9C4272019856B00B3C625 /* 300_Longest_Increasing_Subsequence.h */,
 				7ED942982019F4670073EA81 /* 206_Reverse_Linked_List.h */,
 				7ED94299201A32F50073EA81 /* 226_Invert_Binary_Tree.h */,
+				7ED9429A201CD43C0073EA81 /* Longest_Common_Subsequence.h */,
 			);
 			path = Leetcode;
 			sourceTree = "<group>";
